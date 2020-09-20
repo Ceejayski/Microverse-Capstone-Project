@@ -5,14 +5,120 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Game-ninja - Top Game Vendor Online</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dist/style.css">
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body class="bg-grey">
 
+<body class="bg-grey">
+  <header class="first-navbar fixed-top">
+    <nav class="container navbar h-100 navbar-expand-lg navbar-dark">
+      <a class="navbar-brand text-light mr-4" href="#">
+        <img src="./images/gameninja.png" alt="logo" class="img-fluid logo">Game Ninja
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="#"> <i class="fas fa-user pr-1"></i>Profile</a>
+          </li>
+          <li class="nav-item active text-main mr-4">
+            <a class="nav-link" href="#">
+              <i class="fas fa-home"></i>
+              Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><i class="fas fa-th mr-6"></i> Collections</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a>
+          </li>
+          <li class="nav-item mr-4">
+            <button class="btn rounded-0 text-light bg-main">Post an ad</button>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ml-md-auto">
+          <p class="text-light mr-3 pt-1 d-lg-block d-none"> John Doe</p>
+          <img class="user-img rounded-circle d-lg-block d-none" src="./images/user.jpg" alt="user">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-body">
+    <div class="jumbotron jumbotron-fluid pt-5 mb-0">
+
+      <div class="container text-center">
+        <h1 class="display-6"><img src="./images/gameninja.png" alt="logo" class="img-fluid logo-lg">Game Ninja</h1>
+        <p class="lead">Game Ninja is the ultimate destination for playing, discussing, and creating games.</p>
+        <div class="form-group jumbo-container-form">
+          <select>
+            <option selected>Choose...</option>
+            <option value="1">Action games</option>
+            <option value="2">Action-adventure games</option>
+            <option value="3">Adventure games</option>
+            <option value="4">Role-playing games</option>
+            <option value="5">Simulation games</option>
+            <option value="6">Strategy games</option>
+            <option value="7">Sports games</option>
+            <option value="8">Puzzle games</option>
+            <option value="9">Idle games</option>
+          </select>
+          <input type="text" name="game" id="game" class="border-0 px-2" placeholder="Game Name">
+          <input type="text" name="company" id="company" class="border-0 px-2" placeholder="Company Name">
+          <button>search</button>
+        </div>
+      </div>
+    </div>
+    <section class="bg-white">
+      <div class="container pt-3 pb-4 d-flex align-items-center justify-content-between">
+        <div class="btn-chevron">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="d-flex w-90">
+          <div class="position-relative top-game">
+            <div class="d-flex position-div position-absolute">
+              <p class="discount-percent">-10%</p>
+              <div class="topgame-price px-1">
+                <p class="slashed my-0 text-right slashed-price">$19.99</p>
+                <p class="my-0">$17.99 USD</p>
+              </div>
+            </div>
+            <div class="display-hover mt-90">
+
+              <div class="carousel-float w-90 mx-auto d-flex align-items-center justify-content-between">
+                <img src="./images/lastofus.jpg" alt="" class="position-img-1">
+                <div class="carousel-float-text d-flex text-white mt-2 ">
+                  <p class="ml-2 px-3">👾 Dystopian</p>
+                  <p class="ml-2 px-3">🔫 Action</p>
+                  <p class="ml-2 px-3">Adventure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pl-3 carousel-text">
+            <div class="mb-auto carousel-description">
+              <h4>The Last of Us Part II</h4>
+              <p>The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony
+                Interactive Entertainment for the PlayStation 4</p>
+            </div>
+            <div class="flex carousel-item-buttons ">
+              <button type="submit">Add to Cart</button>
+              <button type="submit">Buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="btn-chevron">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+  </main>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -24,4 +130,5 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/5036f34c07.js" crossorigin="anonymous"></script>
 </body>
+
 </html>

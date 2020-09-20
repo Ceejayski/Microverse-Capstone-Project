@@ -2,4 +2,219 @@
 @import "font";
 @import "color";
 
-// font imports
+// CSS
+
+.w-80 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 92%;
+}
+
+.mt-90 {
+  margin-top: 290px;
+}
+
+.text-main {
+  color: $primary_1;
+}
+
+.bg-grey {
+  background-color: #f4f5f6;
+}
+
+.bg-main {
+  background-color: $primary_1 !important;
+  color: #fff;
+}
+
+.bg-main2 {
+  background-color: $primary_3 !important;
+  color: $primary_2;
+}
+
+.bg-main3 {
+  background-color: $primary_2 !important;
+  color: #fff;
+}
+
+.first-navbar {
+  background-color: $primary_3;
+  color: $primary_2;
+  height: 60px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.mr-6 {
+  margin-right: 20px;
+}
+
+.border-radius-3 {
+  border-radius: 3px !important;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.navbar-nav {
+  i {
+    margin-right: 7px;
+  }
+}
+
+.main-body {
+  margin-top: 60px;
+}
+
+.jumbotron {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(211, 82, 102) !important;
+  background-image: url(/images/background.jpg);
+  background-size: contain;
+  background-blend-mode: difference;
+  color: #fff;
+
+  .jumbo-container-form {
+    input,
+    select {
+      height: 40px;
+      width: 20%;
+      margin-right: -2px;
+      z-index: 2;
+    }
+
+    button {
+      @extend .bg-main2;
+
+      margin-left: 10px;
+      height: 40px;
+      padding: 0 20px;
+      border: none;
+    }
+  }
+
+  .logo-lg {
+    width: 100px;
+  }
+}
+
+.btn-chevron:nth-of-type(1) {
+  border: 1px solid $primary_2;
+  background: linear-gradient(
+    to left,
+    rgba(56, 56, 56, 0.3) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+}
+
+.btn-chevron {
+  width: 4%;
+  border: 1px solid $primary_2;
+  background: linear-gradient(
+    to right,
+    rgba(56, 56, 56, 0.3) 5%,
+    rgba(0, 0, 0, 0) 95%
+  );
+
+  i {
+    display: block;
+    padding: 40px 0;
+    color: $primary_1;
+    font-size: 20px;
+    width: 20px;
+    margin: 0 auto;
+  }
+}
+
+.position-img-1 {
+  height: 50px;
+}
+
+.carousel-float-text {
+  p {
+    padding: 3px 0;
+    background-color: $primary_2;
+    border-radius: 20px;
+  }
+}
+
+.top-game {
+  width: 65%;
+  height: 350px;
+  background: url('/images/topgame.jpg');
+  background-size: cover;
+  background-position: 50%;
+}
+
+.display-hover {
+  display: none;
+}
+
+.top-game:hover {
+  background: linear-gradient( rgb(0, 0, 0, 0), rgba(0, 0, 0) ), url('/images/topgame.jpg');
+  background-size: cover;
+  background-position: 50%;
+  transition: 3s;
+
+  .display-hover {
+    display: block;
+  }
+}
+
+.position-div {
+  bottom: 42px;
+  right: 0;
+}
+
+.carousel-text {
+  width: 35%;
+}
+
+.carousel-description {
+  height: 85%;
+}
+
+.carousel-item-buttons {
+  height: 15%;
+
+  button {
+    background-color: $primary_1;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+  }
+}
+
+.slashed {
+  text-decoration: line-through;
+}
+
+.discount-percent {
+  line-height: 34px;
+  font-size: 26px;
+  padding: 0 5px;
+  color:#ff8c9d;
+  background: $primary_1;
+}
+
+.topgame-price {
+  color: #acdbf5;
+  font-size: 13px;
+  line-height: 21px;
+  background-color: rgba(0,0,0,0.4);
+  height: 34px;
+  .slashed-price {
+    line-height: 13px;
+    font-size: 11px;
+  }
+}

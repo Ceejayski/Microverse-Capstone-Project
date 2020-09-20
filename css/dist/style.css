@@ -1,0 +1,217 @@
+@font-face {
+  font-family: "gotham-bold";
+  src: url("../fonts/gothambold/gothambold1.eot");
+  src: local("gotham-bold"), url("../fonts/gothambold/gothambold1.woff") format("woff");
+}
+@font-face {
+  font-family: "gotham-rounded-light";
+  src: url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.eot");
+  src: local("gotham-rounded-light"), url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff") format("woff"), url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Helvetica-Neue-Light";
+  src: url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.eot");
+  src: local("Helvetica Neue Light"), url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff") format("woff"), url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Helvetica-Neue-Medium";
+  src: url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.eot");
+  src: local("Helvetica Neue Medium"), url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff") format("woff"), url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Helvetica-Neue-Bold";
+  src: url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.eot");
+  src: local("Helvetica-Neue-Bold"), url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff") format("woff"), url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff2") format("woff2");
+}
+.w-80 {
+  width: 85%;
+}
+
+.w-90 {
+  width: 92%;
+}
+
+.mt-90 {
+  margin-top: 290px;
+}
+
+.text-main {
+  color: #d35266;
+}
+
+.bg-grey {
+  background-color: #f4f5f6;
+}
+
+.bg-main {
+  background-color: #d35266 !important;
+  color: #fff;
+}
+
+.bg-main2, .jumbotron .jumbo-container-form button {
+  background-color: #383838 !important;
+  color: #888;
+}
+
+.bg-main3 {
+  background-color: #888 !important;
+  color: #fff;
+}
+
+.first-navbar {
+  background-color: #383838;
+  color: #888;
+  height: 60px;
+}
+
+.logo {
+  width: 60px;
+}
+
+.mr-6 {
+  margin-right: 20px;
+}
+
+.border-radius-3 {
+  border-radius: 3px !important;
+}
+
+.user-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  object-position: 50%;
+}
+
+.navbar-nav i {
+  margin-right: 7px;
+}
+
+.main-body {
+  margin-top: 60px;
+}
+
+.jumbotron {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  background-color: #d35266 !important;
+  background-image: url(/images/background.jpg);
+  background-size: contain;
+  background-blend-mode: difference;
+  color: #fff;
+}
+.jumbotron .jumbo-container-form input,
+.jumbotron .jumbo-container-form select {
+  height: 40px;
+  width: 20%;
+  margin-right: -2px;
+  z-index: 2;
+}
+.jumbotron .jumbo-container-form button {
+  margin-left: 10px;
+  height: 40px;
+  padding: 0 20px;
+  border: none;
+}
+.jumbotron .logo-lg {
+  width: 100px;
+}
+
+.btn-chevron:nth-of-type(1) {
+  border: 1px solid #888;
+  background: linear-gradient(to left, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+}
+
+.btn-chevron {
+  width: 4%;
+  border: 1px solid #888;
+  background: linear-gradient(to right, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
+}
+.btn-chevron i {
+  display: block;
+  padding: 40px 0;
+  color: #d35266;
+  font-size: 20px;
+  width: 20px;
+  margin: 0 auto;
+}
+
+.position-img-1 {
+  height: 50px;
+}
+
+.carousel-float-text p {
+  padding: 3px 0;
+  background-color: #888;
+  border-radius: 20px;
+}
+
+.top-game {
+  width: 65%;
+  height: 350px;
+  background: url("/images/topgame.jpg");
+  background-size: cover;
+  background-position: 50%;
+}
+
+.display-hover {
+  display: none;
+}
+
+.top-game:hover {
+  background: linear-gradient(rgba(0, 0, 0, 0), black), url("/images/topgame.jpg");
+  background-size: cover;
+  background-position: 50%;
+  transition: 3s;
+}
+.top-game:hover .display-hover {
+  display: block;
+}
+
+.position-div {
+  bottom: 42px;
+  right: 0;
+}
+
+.carousel-text {
+  width: 35%;
+}
+
+.carousel-description {
+  height: 85%;
+}
+
+.carousel-item-buttons {
+  height: 15%;
+}
+.carousel-item-buttons button {
+  background-color: #d35266;
+  color: #fff;
+  border: none;
+  padding: 0 10px;
+}
+
+.slashed {
+  text-decoration: line-through;
+}
+
+.discount-percent {
+  line-height: 34px;
+  font-size: 26px;
+  padding: 0 5px;
+  color: #ff8c9d;
+  background: #d35266;
+}
+
+.topgame-price {
+  color: #acdbf5;
+  font-size: 13px;
+  line-height: 21px;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 34px;
+}
+.topgame-price .slashed-price {
+  line-height: 13px;
+  font-size: 11px;
+}
