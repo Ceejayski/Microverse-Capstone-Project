@@ -3,36 +3,43 @@
   src: url("./fonts/gothambold/gothambold1.eot");
   src: local("gotham-bold"), url("./fonts/gothambold/gothambold1.woff") format("woff");
 }
+
 @font-face {
   font-family: "gotham-rounded-light";
   src: url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.eot");
   src: local("gotham-rounded-light"), url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.woff") format("woff"), url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Helvetica-Neue-Light";
   src: url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.eot");
   src: local("Helvetica Neue Light"), url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff") format("woff"), url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Helvetica-Neue-Medium";
   src: url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.eot");
   src: local("Helvetica Neue Medium"), url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff") format("woff"), url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff2") format("woff2");
 }
+
 @font-face {
   font-family: "Helvetica-Neue-Bold";
   src: url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.eot");
   src: local("Helvetica-Neue-Bold"), url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff") format("woff"), url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff2") format("woff2");
 }
+
 @media (min-width: 1200px) and (max-width: 1339px) {
   .container-xl {
     max-width: 90% !important;
   }
 }
+
 @media (min-width: 1340px) {
   .container-xl {
     max-width: 1250px !important;
   }
 }
+
 .justify-flex-between {
   justify-content: space-between;
 }
@@ -58,16 +65,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "gotham-bold" !important;
+  font-family: "gotham-bold", sans-serif !important;
   color: #888;
 }
 
 p {
-  font-family: "Helvetica-Neue-Medium" !important;
+  font-family: "Helvetica-Neue-Medium", sans-serif !important;
 }
 
 li {
-  font-family: "Helvetica-Neue-Light" !important;
+  font-family: "Helvetica-Neue-Light", sans-serif !important;
+}
+
+footer p {
+  width: 80%;
+  margin: 0 auto;
+}
+
+footer h5 {
+  border-bottom: 1px solid #d35266;
+}
+
+footer h5,
+footer h6 {
+  color: #d35266;
 }
 
 .border-grey-bottom {
@@ -90,6 +111,31 @@ li {
   margin-top: 290px;
 }
 
+.carousel-item-buttons {
+  height: 15%;
+}
+
+.carousel-item-buttons button {
+  background-color: #d35266;
+  color: #fff;
+  border: none;
+  padding: 0 10px;
+}
+
+.grid-item-buttons i {
+  font-size: 14px;
+  padding: 5px;
+  color: #888;
+  border: 1px solid #888;
+}
+
+.grid-item-buttons button {
+  background-color: #d35266;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
 .text-main {
   color: #d35266 !important;
 }
@@ -98,7 +144,8 @@ li {
   color: #383838 !important;
 }
 
-.text-minor, footer p {
+.text-minor,
+footer p {
   color: #888 !important;
 }
 
@@ -106,12 +153,14 @@ li {
   background-color: #f4f5f6;
 }
 
-.bg-main, .buy-btn {
+.bg-main,
+.buy-btn {
   background-color: #d35266 !important;
   color: #fff;
 }
 
-.bg-main2, .jumbotron .jumbo-container-form button {
+.bg-main2,
+.jumbotron .jumbo-container-form button {
   background-color: #383838 !important;
   color: #888;
 }
@@ -164,6 +213,7 @@ li {
   background-blend-mode: difference;
   color: #fff;
 }
+
 .jumbotron .jumbo-container-form input,
 .jumbotron .jumbo-container-form select {
   height: 40px;
@@ -171,6 +221,7 @@ li {
   margin-right: -2px;
   z-index: 2;
 }
+
 .jumbotron .jumbo-container-form button {
   margin-left: 10px;
   height: 40px;
@@ -182,17 +233,13 @@ li {
   width: 100px;
 }
 
-.btn-chevron:nth-of-type(1) {
-  border: 1px solid #888;
-  background: linear-gradient(to left, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
-}
-
 .btn-chevron {
   cursor: pointer;
   width: 4%;
   border: 1px solid #888;
   background: linear-gradient(to right, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
 }
+
 .btn-chevron i {
   display: block;
   padding: 40px 0;
@@ -200,6 +247,11 @@ li {
   font-size: 20px;
   width: 20px;
   margin: 0 auto;
+}
+
+.btn-chevron:nth-of-type(1) {
+  border: 1px solid #888;
+  background: linear-gradient(to left, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
 }
 
 .position-img-1 {
@@ -230,6 +282,7 @@ li {
   background-position: 50%;
   transition: 0.3s;
 }
+
 .top-game:hover .display-hover {
   display: block;
 }
@@ -245,16 +298,6 @@ li {
 
 .carousel-description {
   height: 85%;
-}
-
-.carousel-item-buttons {
-  height: 15%;
-}
-.carousel-item-buttons button {
-  background-color: #d35266;
-  color: #fff;
-  border: none;
-  padding: 0 10px;
 }
 
 .slashed {
@@ -276,6 +319,7 @@ li {
   background-color: rgba(0, 0, 0, 0.4);
   height: 34px;
 }
+
 .topgame-price .slashed-price {
   line-height: 13px;
   font-size: 11px;
@@ -291,6 +335,7 @@ li {
   color: #d35266 !important;
   background: transparent;
 }
+
 .browse-all span {
   padding: 0 15px;
   display: block;
@@ -298,6 +343,7 @@ li {
   border: 1px solid #d35266;
   border-radius: 2px;
 }
+
 .browse-all span:hover {
   border: 1px solid pink;
 }
@@ -342,37 +388,13 @@ li {
 .tag-span {
   color: #fff;
 }
+
 .tag-span a {
   font-size: 11px;
   text-decoration: none !important;
   border-radius: 20px;
   padding: 3px 5px;
   background-color: #888;
-}
-
-.grid-item-buttons i {
-  font-size: 14px;
-  padding: 5px;
-  color: #888;
-  border: 1px solid #888;
-}
-.grid-item-buttons button {
-  background-color: #d35266;
-  color: #fff;
-  border: none;
-  border-radius: 3px;
-}
-
-footer p {
-  width: 80%;
-  margin: 0 auto;
-}
-footer h5 {
-  border-bottom: 1px solid #d35266;
-}
-footer h5,
-footer h6 {
-  color: #d35266;
 }
 
 .footer-flex-1 {
@@ -390,6 +412,7 @@ footer h6 {
 .last-footer-flex h6 {
   width: 50%;
 }
+
 .last-footer-flex a {
   border: 1px solid #888;
   color: #888;
@@ -420,6 +443,7 @@ footer h6 {
 .search-result-card:hover {
   background-color: #fff;
 }
+
 .search-result-card:hover .hover-display {
   display: inline-block;
 }
@@ -440,10 +464,12 @@ footer h6 {
     display: flex;
   }
 }
+
 @media (max-width: 768px) {
   .jumbotron {
     height: 180px;
   }
+
   .jumbotron .fa-search {
     top: 27%;
     right: 10px;
@@ -479,6 +505,7 @@ footer h6 {
     width: 100%;
   }
 }
+
 @media (max-width: 574px) and (min-width: 366px) {
   .grid-item-price {
     width: 100%;
@@ -491,6 +518,7 @@ footer h6 {
     margin: 0 auto;
   }
 }
+
 @media (min-width: 768px) {
   .grid-card:hover {
     transform: scale(1.2);

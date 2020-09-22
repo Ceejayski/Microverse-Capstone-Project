@@ -57,6 +57,24 @@ li {
   font-family: $helvetica !important;
 }
 
+footer {
+  p {
+    @extend .text-minor;
+
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h5 {
+    border-bottom: 1px solid $primary_1;
+  }
+
+  h5,
+  h6 {
+    color: $primary_1;
+  }
+}
+
 .border-grey-bottom {
   border-bottom: 1px solid #ccc;
 }
@@ -75,6 +93,33 @@ li {
 
 .mt-90 {
   margin-top: 290px;
+}
+
+.carousel-item-buttons {
+  height: 15%;
+
+  button {
+    background-color: $primary_1;
+    color: #fff;
+    border: none;
+    padding: 0 10px;
+  }
+}
+
+.grid-item-buttons {
+  i {
+    font-size: 14px;
+    padding: 5px;
+    color: $primary_2;
+    border: 1px solid $primary_2;
+  }
+
+  button {
+    background-color: $primary_1;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+  }
 }
 
 .text-main {
@@ -177,24 +222,16 @@ li {
   width: 100px;
 }
 
-.btn-chevron:nth-of-type(1) {
-  border: 1px solid $primary_2;
-  background: linear-gradient(
-    to left,
-    rgba(56, 56, 56, 0.3) 5%,
-    rgba(0, 0, 0, 0) 95%
-  );
-}
-
 .btn-chevron {
   cursor: pointer;
   width: 4%;
   border: 1px solid $primary_2;
-  background: linear-gradient(
-    to right,
-    rgba(56, 56, 56, 0.3) 5%,
-    rgba(0, 0, 0, 0) 95%
-  );
+  background:
+    linear-gradient(
+      to right,
+      rgba(56, 56, 56, 0.3) 5%,
+      rgba(0, 0, 0, 0) 95%
+    );
 
   i {
     display: block;
@@ -204,6 +241,16 @@ li {
     width: 20px;
     margin: 0 auto;
   }
+}
+
+.btn-chevron:nth-of-type(1) {
+  border: 1px solid $primary_2;
+  background:
+    linear-gradient(
+      to left,
+      rgba(56, 56, 56, 0.3) 5%,
+      rgba(0, 0, 0, 0) 95%
+    );
 }
 
 .position-img-1 {
@@ -231,7 +278,8 @@ li {
 }
 
 .top-game:hover {
-  background: linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0)),
+  background:
+    linear-gradient(rgb(0, 0, 0, 0), rgba(0, 0, 0)),
     url("/images/topgame.jpg");
   background-size: cover;
   background-position: 50%;
@@ -255,17 +303,6 @@ li {
   height: 85%;
 }
 
-.carousel-item-buttons {
-  height: 15%;
-
-  button {
-    background-color: $primary_1;
-    color: #fff;
-    border: none;
-    padding: 0 10px;
-  }
-}
-
 .slashed {
   text-decoration: line-through;
 }
@@ -284,6 +321,7 @@ li {
   line-height: 21px;
   background-color: rgba(0, 0, 0, 0.4);
   height: 34px;
+
   .slashed-price {
     line-height: 13px;
     font-size: 11px;
@@ -352,46 +390,13 @@ li {
 
 .tag-span {
   color: #fff;
+
   a {
     font-size: 11px;
     text-decoration: none !important;
     border-radius: 20px;
     padding: 3px 5px;
     background-color: $primary_2;
-  }
-}
-
-.grid-item-buttons {
-  i {
-    font-size: 14px;
-    padding: 5px;
-    color: $primary_2;
-    border: 1px solid $primary_2;
-  }
-
-  button {
-    background-color: $primary_1;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-  }
-}
-
-footer {
-  p {
-    @extend .text-minor;
-
-    width: 80%;
-    margin: 0 auto;
-  }
-
-  h5 {
-    border-bottom: 1px solid $primary_1;
-  }
-
-  h5,
-  h6 {
-    color: $primary_1;
   }
 }
 
@@ -467,7 +472,7 @@ footer {
 
 // media Queries
 
-@media (max-width: 768px) and (min-width: 312px){
+@media (max-width: 768px) and (min-width: 312px) {
   .d-sm-flex {
     display: flex;
   }
