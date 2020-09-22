@@ -6,7 +6,7 @@ Project 8 of 40 of Microverse curriculum
 ![screenshot](./images/screenshot2.jpg)
 ![screenshot](./images/search.jpg)
 
-</h1>This is an e-commerce website developed for a construction equipments vendor for as  the capstone project for the microverse html/css track</h1>
+</h1>This is an e-commerce website developed for a Game vendor for as  the capstone project for the microverse html/css track</h1>
 
 ## Built With
 
