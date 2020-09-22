@@ -1,28 +1,83 @@
 @font-face {
   font-family: "gotham-bold";
-  src: url("../fonts/gothambold/gothambold1.eot");
-  src: local("gotham-bold"), url("../fonts/gothambold/gothambold1.woff") format("woff");
+  src: url("./fonts/gothambold/gothambold1.eot");
+  src: local("gotham-bold"), url("./fonts/gothambold/gothambold1.woff") format("woff");
 }
 @font-face {
   font-family: "gotham-rounded-light";
-  src: url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.eot");
-  src: local("gotham-rounded-light"), url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff") format("woff"), url("../fonts/Gotham-Rounded-Light/GothamRoundedLight.woff2") format("woff2");
+  src: url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.eot");
+  src: local("gotham-rounded-light"), url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.woff") format("woff"), url("./fonts/Gotham-Rounded-Light/GothamRoundedLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "Helvetica-Neue-Light";
-  src: url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.eot");
-  src: local("Helvetica Neue Light"), url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff") format("woff"), url("../fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff2") format("woff2");
+  src: url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.eot");
+  src: local("Helvetica Neue Light"), url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff") format("woff"), url("./fonts/Helvetica-Neue-Light/HelveticaNeueLight.woff2") format("woff2");
 }
 @font-face {
   font-family: "Helvetica-Neue-Medium";
-  src: url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.eot");
-  src: local("Helvetica Neue Medium"), url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff") format("woff"), url("../fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff2") format("woff2");
+  src: url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.eot");
+  src: local("Helvetica Neue Medium"), url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff") format("woff"), url("./fonts/Helvetica-Neue-Medium/HelveticaNeueMedium.woff2") format("woff2");
 }
 @font-face {
   font-family: "Helvetica-Neue-Bold";
-  src: url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.eot");
-  src: local("Helvetica-Neue-Bold"), url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff") format("woff"), url("../fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff2") format("woff2");
+  src: url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.eot");
+  src: local("Helvetica-Neue-Bold"), url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff") format("woff"), url("./fonts/Helvetica-Neue-Bold/HelveticaNeueBold.woff2") format("woff2");
 }
+@media (min-width: 1200px) and (max-width: 1339px) {
+  .container-xl {
+    max-width: 90% !important;
+  }
+}
+@media (min-width: 1340px) {
+  .container-xl {
+    max-width: 1250px !important;
+  }
+}
+.justify-flex-between {
+  justify-content: space-between;
+}
+
+.dflex {
+  display: flex;
+}
+
+.align-flex-center {
+  align-items: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "gotham-bold" !important;
+  color: #888;
+}
+
+p {
+  font-family: "Helvetica-Neue-Medium" !important;
+}
+
+li {
+  font-family: "Helvetica-Neue-Light" !important;
+}
+
+.border-grey-bottom {
+  border-bottom: 1px solid #ccc;
+}
+
+.border-grey-top {
+  border-top: 1px solid #ccc;
+}
+
 .w-80 {
   width: 85%;
 }
@@ -36,14 +91,22 @@
 }
 
 .text-main {
-  color: #d35266;
+  color: #d35266 !important;
+}
+
+.text-major {
+  color: #383838 !important;
+}
+
+.text-minor, footer p {
+  color: #888 !important;
 }
 
 .bg-grey {
   background-color: #f4f5f6;
 }
 
-.bg-main {
+.bg-main, .buy-btn {
   background-color: #d35266 !important;
   color: #fff;
 }
@@ -114,7 +177,8 @@
   padding: 0 20px;
   border: none;
 }
-.jumbotron .logo-lg {
+
+.logo-lg {
   width: 100px;
 }
 
@@ -124,6 +188,7 @@
 }
 
 .btn-chevron {
+  cursor: pointer;
   width: 4%;
   border: 1px solid #888;
   background: linear-gradient(to right, rgba(56, 56, 56, 0.3) 5%, rgba(0, 0, 0, 0) 95%);
@@ -163,7 +228,7 @@
   background: linear-gradient(rgba(0, 0, 0, 0), black), url("/images/topgame.jpg");
   background-size: cover;
   background-position: 50%;
-  transition: 3s;
+  transition: 0.3s;
 }
 .top-game:hover .display-hover {
   display: block;
@@ -214,4 +279,221 @@
 .topgame-price .slashed-price {
   line-height: 13px;
   font-size: 11px;
+}
+
+.browse-all {
+  border-radius: 2px;
+  border: none;
+  padding: 1px;
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none !important;
+  color: #d35266 !important;
+  background: transparent;
+}
+.browse-all span {
+  padding: 0 15px;
+  display: block;
+  background: transparent;
+  border: 1px solid #d35266;
+  border-radius: 2px;
+}
+.browse-all span:hover {
+  border: 1px solid pink;
+}
+
+.grid-card {
+  box-shadow: 1px 5px 5px 0 #888;
+}
+
+.grid-item-price {
+  background-color: #888;
+  padding: 5px;
+  font-size: 11px;
+}
+
+.grid-item-realprice {
+  display: inline;
+  padding: 1px 5px 2px;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.grid-item-price-p:first-child {
+  padding-left: 5px;
+  display: inline-block;
+  color: #ff8c9d;
+  background: #d35266;
+}
+
+.description p {
+  font-size: 13px;
+}
+
+.description p i {
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.description p:first-of-type,
+.tags p:first-of-type {
+  font-weight: 500;
+}
+
+.tag-span {
+  color: #fff;
+}
+.tag-span a {
+  font-size: 11px;
+  text-decoration: none !important;
+  border-radius: 20px;
+  padding: 3px 5px;
+  background-color: #888;
+}
+
+.grid-item-buttons i {
+  font-size: 14px;
+  padding: 5px;
+  color: #888;
+  border: 1px solid #888;
+}
+.grid-item-buttons button {
+  background-color: #d35266;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+}
+
+footer p {
+  width: 80%;
+  margin: 0 auto;
+}
+footer h5 {
+  border-bottom: 1px solid #d35266;
+}
+footer h5,
+footer h6 {
+  color: #d35266;
+}
+
+.footer-flex-1 {
+  width: 30%;
+}
+
+.footer-flex-2 {
+  width: 25%;
+}
+
+.footer-flex {
+  width: 20%;
+}
+
+.last-footer-flex h6 {
+  width: 50%;
+}
+.last-footer-flex a {
+  border: 1px solid #888;
+  color: #888;
+  width: 40%;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.py-10 {
+  padding: 10px;
+}
+
+.social-icons {
+  border: 1px solid #888;
+  border-radius: 50%;
+  padding: 7px 6px;
+}
+
+.search-result {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.search-result-card .hover-display {
+  display: none;
+}
+
+.search-result-card:hover {
+  background-color: #fff;
+}
+.search-result-card:hover .hover-display {
+  display: inline-block;
+}
+
+.buy-btn {
+  color: #fff !important;
+  padding: 8px 12px;
+  border-radius: 2px;
+}
+
+.add-btn {
+  border: 1px solid #888;
+  padding: 2px;
+}
+
+@media (max-width: 768px) and (min-width: 312px) {
+  .d-sm-flex {
+    display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 180px;
+  }
+  .jumbotron .fa-search {
+    top: 27%;
+    right: 10px;
+    color: #888;
+  }
+
+  .border-top-appear {
+    border-top: 1px solid #ccc;
+  }
+
+  aside {
+    background-color: #fff;
+  }
+
+  h1 {
+    font-size: 1.5em !important;
+  }
+
+  h4 {
+    font-size: 0.98em !important;
+  }
+
+  .w-90 {
+    width: 100%;
+  }
+
+  .top-game {
+    width: 100%;
+    height: 280px;
+  }
+
+  .carousel-text {
+    width: 100%;
+  }
+}
+@media (max-width: 574px) and (min-width: 366px) {
+  .grid-item-price {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .w-sm-auto {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  .grid-card:hover {
+    transform: scale(1.2);
+    transition: 0.2s;
+  }
 }

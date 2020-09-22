@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game-ninja - Top Game Vendor Online</title>
+  <link rel="stylesheet" href="css/dist/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="bg-grey">
+  <header class="first-navbar fixed-top">
+    <nav class="container-xl navbar h-100 navbar-expand-lg navbar-dark">
+      <a class="navbar-brand text-white mr-4" href="#">
+        <img src="./images/gameninja.png" alt="logo" class="img-fluid logo">Game Ninja
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item d-lg-none">
+            <a class="nav-link" href="#"> <i class="fas fa-user pr-1"></i>Profile</a>
+          </li>
+          <li class="nav-item active text-main mr-4">
+            <a class="nav-link" href="#">
+              <i class="fas fa-home"></i>
+              Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><i class="fas fa-th mr-6"></i> Collections</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i>Shopping Cart</a>
+          </li>
+          <li class="nav-item mr-4">
+            <button class="btn rounded-0 text-light bg-main">Post an ad</button>
+          </li>
+        </ul>
+        <div class="d-flex align-items-center ml-md-auto">
+          <p class="text-light mr-3 pt-1 d-lg-block d-none"> John Doe</p>
+          <img class="user-img rounded-circle d-lg-block d-none" src="./images/user.jpg" alt="user">
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="main-body">
+    <div class="jumbotron jumbotron-fluid pt-5 mb-0">
+
+      <div class="container-xl text-center">
+        <h1 class="display-6"><img src="./images/gameninja.png" alt="logo" class="img-fluid logo-lg">Game Ninja</h1>
+        <div class="input-group mb-3 position-relative d-md-none">
+          <div class="input-group-prepend">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Search by</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Company</a>
+              <a class="dropdown-item" href="#">Category</a>
+              <a class="dropdown-item" href="#">Game</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <a href="#"><i class="fa fa-search position-absolute" aria-hidden="true"></i></a>
+        </div>
+        <p class="lead d-none d-md-block">Game Ninja is the ultimate destination for playing, discussing, and creating
+          games.</p>
+        <div class="form-group jumbo-container-form d-none d-md-block">
+          <select>
+            <option selected>Choose...</option>
+            <option value="1">Action games</option>
+            <option value="2">Action-adventure games</option>
+            <option value="3">Adventure games</option>
+            <option value="4">Role-playing games</option>
+            <option value="5">Simulation games</option>
+            <option value="6">Strategy games</option>
+            <option value="7">Sports games</option>
+            <option value="8">Puzzle games</option>
+            <option value="9">Idle games</option>
+          </select>
+          <input type="text" name="game" id="game" class="border-0 px-2" placeholder="Game Name">
+          <input type="text" name="company" id="company" class="border-0 px-2" placeholder="Company Name">
+          <button>search</button>
+        </div>
+      </div>
+    </div>
+    <section class="container-xl">
+      <section class="row">
+        <aside class="col-lg-3">
+          <div class="form-check pt-3">
+            <div class="form-check-inline mr-3">
+              <label class="form-check-label text-minor">
+                <input type="checkbox" class="form-check-input" value="1" />Demo
+              </label>
+            </div>
+            <div class="form-check-inline">
+              <label class="form-check-label text-minor">
+                <input type="checkbox" class="form-check-input" value="1" />Full-game
+              </label>
+            </div>
+          </div>
+          <div class="form-check mt-0 mt-lg-3 text-minor">
+            <div class="border-grey-bottom">
+              <h6 class="text-major">Type</h6>
+            </div>
+            <div class="d-flex flex-sm-row flex-md-column mt-2">
+              <div class="form-check-inline mb-2">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />Sports
+                </label>
+              </div>
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />Simulation
+                </label>
+              </div>
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />Action
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-check mt-0 mt-lg-3-0 mt-lg-3 text-minor">
+            <div class="border-grey-bottom pb-1">
+              <h6 class="text-major">Company</h6>
+            </div>
+            <div class="d-flex flex-sm-row flex-md-column mt-2">
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />Ubisoft
+                </label>
+              </div>
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />Bethesda
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="form-check mt-0 mt-lg-3 text-minor">
+            <div class="border-grey-bottom pb-1">
+              <h6 class="text-major">Price Range</h6>
+            </div>
+            <div class="d-flex flex-sm-row flex-md-column mt-2">
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />
+                  1$ - 5$
+                </label>
+              </div>
+              <div class="form-check-inline mb-1">
+                <label class="form-check-label ">
+                  <input type="checkbox" class="form-check-input" value="1" />5$ above
+                </label>
+              </div>
+            </div>
+          </div>
+        </aside>
+        <section class="col-lg-9 px-0 search-result border-top-appear">
+          <div class="px-3 mt-2">
+            <p>
+              "5" results for PES in Sports by Konami
+            </p>
+          </div>
+          <div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="p-2 border-grey-bottom border-grey-top search-result-card d-sm-flex">
+              <div>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                  class="img-fluid h-100">
+              </div>
+              <div class="ml-2 flex-grow-1">
+                <div class="search-result-description">
+                  <div class="d-flex justify-content-between">
+                    <h6 class="text-major">Space Pirate</h6>
+                    <div><a href="#"><i class="text-minor add-btn material-icons">add</i></a></div>
+                  </div>
+                  <div class="">
+                    <p class="text-main mb-0">Platforms </p>
+                    <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                        class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                  </div>
+                  <div class="d-flex justify-content-between mb-2">
+                    <div class="tags my-0">
+                      <p class="my-0 font-weight text-main">TAGS</p>
+                      <p class="tag-span">
+                        <a href="#"> Action</a>
+                        <a href="#"> Adventure</a>
+                        <a href="#"> Adventure</a>
+                      </p>
+                    </div>
+                    <div class="align-self-end">
+                      <a class="buy-btn hover-display" href="#">Play Demo</a>
+                      <a class="buy-btn" href="#">13.99$</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </section>
+  </main>
+  <footer class="bg-white">
+    <!-- footer small -->
+    <section class="py-3 d-md-none">
+      <div class="justify-content-center dflex text-minor border-grey-bottom pb-2">
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-yahoo"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-twitter"></i></a>
+        <a href="#"><i class="social-icons px-2 fab mr-2 fa-facebook-f"></i></a>
+      </div>
+      <p class="text-center">Copyright© 2020 Game-Nin.com. All Right Reserved. Designed by <a href="#"> Ceejayski</a>
+      </p>
+    </section>
+    <!-- footer large -->
+    <section class="d-none d-md-block">
+      <section class="container-xl dflex justify-flex-between py-3">
+        <div class="footer-flex-1">
+          <div class=" d-flex align-flex-center ">
+            <img src="./images/gameninja.png" alt="logo" class="logo-lg">
+            <h4>GAME-NINJA</h4>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat ut quia dolor quis quasi a? Eos
+            recusandae deleniti, non repellendus quas deserunt consequatur culpa dolorum quod, fugiat odio ipsa!</p>
+        </div>
+        <div class="footer-flex-2">
+          <h5 class="pb-1">Categories</h5>
+          <div class="dflex justify-flex-between text-minor">
+            <ul>
+              <li><a href="#">Action games</a> </li>
+              <li><a href="#">Adventure games</a> </li>
+              <li><a href="#">Role-playing games</a> </li>
+              <li><a href="#">MMORPG</a> </li>
+              <li><a href="#">Sports</a> </li>
+              <li><a href="#">Simulation</a> </li>
+            </ul>
+            <ul>
+              <li><a href="#">Action games</a> </li>
+              <li><a href="#">Adventure games</a> </li>
+              <li><a href="#">Role-playing games</a> </li>
+              <li><a href="#">MMORPG</a> </li>
+              <li><a href="#">Sports</a> </li>
+              <li><a href="#">Simulation</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-flex">
+          <h5 class="pb-1">navigation</h5>
+          <ul class="w-80 mx-auto text-minor">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Purchase</a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#"> Advert</a></li>
+          </ul>
+        </div>
+        <div class="footer-flex align-self-center last-footer-flex text-right">
+
+          <div class="d-flex">
+            <h6 class="mr-2 mr-md-auto pt-1 mb-2">Country</h6>
+            <a href="#" class="mr-2">Nigeria</a>
+          </div>
+          <div class="d-flex align-flex-center">
+            <h6 class="mr-2 mr-md-auto mb-2">Language</h6>
+            <a href="#" class="my-2 mr-2">English</a>
+          </div>
+          <div class="d-flex">
+            <h6 class="mr-2 mr-md-auto mb-2">Currency</h6>
+            <a href="#" class="mr-2">USD</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="border-grey-top bg-white py-10">
+        <div class="container-xl ">
+          <div class="dflex justify-flex-between align-items-center">
+            <p>Copyright© 2020 Game-Nin.com. All Right Reserved. Designed by <a href="#"> Ceejayski</a></p>
+            <div class="dflex text-minor">
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-yahoo"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-twitter"></i></a>
+              <a href="#"><i class="social-icons px-2 fab mr-2 fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/5036f34c07.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

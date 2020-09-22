@@ -15,8 +15,8 @@
 
 <body class="bg-grey">
   <header class="first-navbar fixed-top">
-    <nav class="container navbar h-100 navbar-expand-lg navbar-dark">
-      <a class="navbar-brand text-light mr-4" href="#">
+    <nav class="container-xl navbar h-100 navbar-expand-lg navbar-dark">
+      <a class="navbar-brand text-white mr-4" href="#">
         <img src="./images/gameninja.png" alt="logo" class="img-fluid logo">Game Ninja
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -53,10 +53,24 @@
   <main class="main-body">
     <div class="jumbotron jumbotron-fluid pt-5 mb-0">
 
-      <div class="container text-center">
+      <div class="container-xl text-center">
         <h1 class="display-6"><img src="./images/gameninja.png" alt="logo" class="img-fluid logo-lg">Game Ninja</h1>
-        <p class="lead">Game Ninja is the ultimate destination for playing, discussing, and creating games.</p>
-        <div class="form-group jumbo-container-form">
+        <div class="input-group mb-3 position-relative d-md-none">
+          <div class="input-group-prepend">
+            <button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">Search by</button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Company</a>
+              <a class="dropdown-item" href="#">Category</a>
+              <a class="dropdown-item" href="#">Game</a>
+            </div>
+          </div>
+          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+          <a href="#"><i class="fa fa-search position-absolute" aria-hidden="true"></i></a>
+        </div>
+        <p class="lead d-none d-md-block">Game Ninja is the ultimate destination for playing, discussing, and creating
+          games.</p>
+        <div class="form-group jumbo-container-form d-none d-md-block">
           <select>
             <option selected>Choose...</option>
             <option value="1">Action games</option>
@@ -71,16 +85,16 @@
           </select>
           <input type="text" name="game" id="game" class="border-0 px-2" placeholder="Game Name">
           <input type="text" name="company" id="company" class="border-0 px-2" placeholder="Company Name">
-          <button>search</button>
+          <button type="button" onclick="location.href='./search.html';">search</button>
         </div>
       </div>
     </div>
     <section class="bg-white">
-      <div class="container pt-3 pb-4 d-flex align-items-center justify-content-between">
-        <div class="btn-chevron">
+      <div class="container-xl pt-3 pb-4 d-flex align-items-center justify-content-between">
+        <div class="btn-chevron d-none d-md-block">
           <i class="fa fa-chevron-left" aria-hidden="true"></i>
         </div>
-        <div class="d-flex w-90">
+        <div class="d-md-flex w-90">
           <div class="position-relative top-game">
             <div class="d-flex position-div position-absolute">
               <p class="discount-percent">-10%</p>
@@ -103,22 +117,565 @@
           </div>
           <div class="pl-3 carousel-text">
             <div class="mb-auto carousel-description">
-              <h4>The Last of Us Part II</h4>
-              <p>The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony
+              <h4 class="text-main">The Last of Us Part II</h4>
+              <p class="text-minor">The Last of Us Part II is a 2020 action-adventure game developed by Naughty Dog and published by Sony
                 Interactive Entertainment for the PlayStation 4</p>
             </div>
-            <div class="flex carousel-item-buttons ">
+            <div class="carousel-item-buttons ">
               <button type="submit">Add to Cart</button>
               <button type="submit">Buy</button>
             </div>
           </div>
         </div>
-        <div class="btn-chevron">
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <section class="container-xl mt-3">
+      <div class="d-flex container justify-content-between align-items-end border-grey-bottom pb-1">
+        <h4 class="m-0 p-0">Sport Games</h4>
+        <div><a href="#" class="bg-grey browse-all p-0"> <span> Browse all</span></a></div>
+      </div>
+      <div class="pt-3 pb-4 d-flex align-items-center justify-content-between">
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="row w-90 mx-auto">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 grid-card bg-white">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/916840/header_292x136.jpg?t=1594746141" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/418650/header_292x136.jpg?t=1572335811" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3 d-md-none d-lg-block">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/1079800/header_292x136.jpg?t=1598548267" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <section class="container-xl mt-5">
+      <div class="d-flex container justify-content-between align-items-end border-grey-bottom pb-1">
+        <h4 class="m-0 p-0">Action Games</h4>
+        <div><a href="#" class="bg-grey browse-all p-0"> <span> Browse all</span></a></div>
+      </div>
+      <div class="pt-3 pb-4 d-flex align-items-center justify-content-between">
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="row w-90 mx-auto">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 grid-card bg-white">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/916840/header_292x136.jpg?t=1594746141" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/418650/header_292x136.jpg?t=1572335811" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3 d-md-none d-lg-block">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/1079800/header_292x136.jpg?t=1598548267" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </div>
+      </div>
+    </section>
+    <section class="container-xl mt-5">
+      <div class="d-flex container justify-content-between align-items-end border-grey-bottom pb-1">
+        <h4 class="m-0 p-0">New Games</h4>
+        <div><a href="#" class="bg-grey browse-all p-0"> <span> Browse all</span></a></div>
+      </div>
+      <div class="pt-3 pb-4 d-flex align-items-center justify-content-between">
+        <div class="btn-chevron d-none d-md-block">
+          <i class="fa fa-chevron-left" aria-hidden="true"></i>
+        </div>
+        <div class="row w-90 mx-auto">
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 grid-card bg-white">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/916840/header_292x136.jpg?t=1594746141" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/418650/header_292x136.jpg?t=1572335811" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/559330/header_292x136.jpg?t=1595582855" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 mb-3 d-md-none d-lg-block">
+            <div class="p-2 bg-white grid-card">
+              <img src="https://steamcdn-a.akamaihd.net/steam/apps/1079800/header_292x136.jpg?t=1598548267" alt="game"
+                class="img-fluid w-sm-auto">
+              <div class="text-right grid-item-price">
+                <div class="grid-item-price-p">
+                  <span>-10%</span>
+                  <div class="grid-item-realprice">
+                    <span class="slashed">$14.99</span> 13.99
+                  </div>
+                </div>
+              </div>
+              <div class="description">
+                <h6 class="text-major">Space Pirate</h6>
+                <div class="">
+                  <p class="text-main mb-0">Platforms </p>
+                  <p> <i class="fab fa-windows text-minor"></i> <i class="fab fa-apple text-minor"></i> <i
+                      class="fab fa-playstation text-minor"></i> <i class="fab fa-xbox text-minor"></i></p>
+                </div>
+                <div class="tags mb-5">
+                  <p class="mb-0 font-weight text-main">TAGS</p>
+                  <p class="tag-span">
+                    <a href="#"> Action</a>
+                    <a href="#"> Adventure</a>
+                    <a href="#"> Adventure</a>
+                  </p>
+                </div>
+              </div>
+              <div class="grid-item-buttons d-flex align-items-center">
+                <div class="mr-auto"><a href=""><i class="material-icons">add</i></a></div>
+                <a href="#" class="text-main font-weight-bold">$13.99 USD</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="btn-chevron d-none d-md-block">
           <i class="fa fa-chevron-right" aria-hidden="true"></i>
         </div>
       </div>
     </section>
   </main>
+  <footer class="bg-white">
+    <!-- footer small -->
+    <section class="py-3 d-md-none">
+      <div class="justify-content-center dflex text-minor border-grey-bottom pb-2">
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-yahoo"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-twitter"></i></a>
+        <a href="#"><i class="social-icons px-2 fab mr-2 fa-facebook-f"></i></a>
+      </div>
+      <p class="text-center">Copyright© 2020 Game-Nin.com. All Right Reserved. Designed by <a href="#"> Ceejayski</a></p>
+    </section>
+    <!-- footer large -->
+    <section class="d-none d-md-block">
+      <section class="container-xl dflex justify-flex-between py-3">
+        <div class="footer-flex-1">
+          <div class=" d-flex align-flex-center ">
+            <img src="./images/gameninja.png" alt="logo" class="logo-lg">
+            <h4>GAME-NINJA</h4>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quaerat ut quia dolor quis quasi a? Eos
+            recusandae deleniti, non repellendus quas deserunt consequatur culpa dolorum quod, fugiat odio ipsa!</p>
+        </div>
+        <div class="footer-flex-2">
+          <h5 class="pb-1">Categories</h5>
+          <div class="dflex justify-flex-between text-minor">
+            <ul>
+              <li><a href="#">Action games</a> </li>
+              <li><a href="#">Adventure games</a> </li>
+              <li><a href="#">Role-playing games</a> </li>
+              <li><a href="#">MMORPG</a> </li>
+              <li><a href="#">Sports</a> </li>
+              <li><a href="#">Simulation</a> </li>
+            </ul>
+            <ul>
+              <li><a href="#">Action games</a> </li>
+              <li><a href="#">Adventure games</a> </li>
+              <li><a href="#">Role-playing games</a> </li>
+              <li><a href="#">MMORPG</a> </li>
+              <li><a href="#">Sports</a> </li>
+              <li><a href="#">Simulation</a> </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-flex">
+          <h5 class="pb-1">navigation</h5>
+          <ul class="w-80 mx-auto text-minor">
+            <li><a href="#"> Home</a></li>
+            <li><a href="#"> About</a></li>
+            <li><a href="#"> Purchase</a></li>
+            <li><a href="#"> Contact</a></li>
+            <li><a href="#"> Advert</a></li>
+          </ul>
+        </div>
+        <div class="footer-flex align-self-center last-footer-flex text-right">
+
+          <div class="d-flex">
+            <h6 class="mr-2 mr-md-auto pt-1 mb-2">Country</h6>
+            <a href="#" class="mr-2">Nigeria</a>
+          </div>
+          <div class="d-flex align-flex-center">
+            <h6 class="mr-2 mr-md-auto mb-2">Language</h6>
+            <a href="#" class="my-2 mr-2">English</a>
+          </div>
+          <div class="d-flex">
+            <h6 class="mr-2 mr-md-auto mb-2">Currency</h6>
+            <a href="#" class="mr-2">USD</a>
+          </div>
+
+        </div>
+      </section>
+      <section class="border-grey-top bg-white py-10">
+        <div class="container-xl ">
+          <div class="dflex justify-flex-between align-items-center">
+            <p>Copyright© 2020 Game-Nin.com. All Right Reserved. Designed by <a href="#"> Ceejayski</a></p>
+            <div class="dflex text-minor">
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-yahoo"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-google-plus-g"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-linkedin-in"></i></a>
+              <a href="#"><i class="social-icons px-2 py-2 mr-2 fab fa-twitter"></i></a>
+              <a href="#"><i class="social-icons px-2 fab mr-2 fa-facebook-f"></i></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
