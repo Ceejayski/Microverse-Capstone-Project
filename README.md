@@ -1,6 +1,6 @@
 
 
-## Game-Ninja (an ecommerce site for construction equipments sale)
+## Game-Ninja (an ecommerce site for a Game Vendor)
 Project 8 of 40 of Microverse curriculum 
 ![screenshot](./images/screenshot.jpg)
 
