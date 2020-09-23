@@ -3,8 +3,6 @@ Project 8 of 40 of Microverse curriculum
 ## BuyItApp (an ecommerce site for construction equipments sale)
 
 ![screenshot](./images/screenshot.jpg)
-![screenshot](./images/screenshot2.jpg)
-![screenshot](./images/search.jpg)
 
 </h1>This is an e-commerce website developed for a Game vendor for as  the capstone project for the microverse html/css track</h1>
 
