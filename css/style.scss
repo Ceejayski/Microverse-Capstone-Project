@@ -191,9 +191,7 @@ footer {
 .jumbotron {
   height: 260px;
   position: relative;
-  overflow: hidden;
   background-color: rgb(211, 82, 102) !important;
-  background-image: url(/images/background.jpg);
   background-size: contain;
   background-blend-mode: difference;
   color: #fff;
@@ -202,7 +200,7 @@ footer {
     input,
     select {
       height: 40px;
-      width: 20%;
+      width: 160px;
       margin-right: -2px;
       z-index: 2;
     }
@@ -301,6 +299,10 @@ footer {
 
 .carousel-description {
   height: 85%;
+}
+
+.no-text-decoration {
+  text-decoration: none !important;
 }
 
 .slashed {
@@ -449,14 +451,6 @@ footer {
   }
 }
 
-.search-result-card:hover {
-  background-color: #fff;
-
-  .hover-display {
-    display: inline-block;
-  }
-}
-
 .buy-btn {
   @extend .bg-main;
 
@@ -478,9 +472,13 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .jumbotron {
-    height: 180px;
+    height: auto;
+
+    p {
+      font-size: 0.98em !important;
+    }
 
     .fa-search {
       top: 27%;
@@ -532,9 +530,32 @@ footer {
   }
 }
 
+@media (max-width: 612px) {
+  .jumbotron {
+    input,
+    select {
+      width: 250px !important;
+      margin-bottom: 10px;
+    }
+
+    button {
+      display: block;
+      margin: 0 auto !important;
+    }
+  }
+}
+
 @media (min-width: 768px) {
   .grid-card:hover {
     transform: scale(1.2);
     transition: 0.2s;
+  }
+
+  .search-result-card:hover {
+    background-color: #fff;
+
+    .hover-display {
+      display: inline-block;
+    }
   }
 }
