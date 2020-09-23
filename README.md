@@ -1,7 +1,7 @@
-# Microverse-Capstone-Project
-Project 8 of 40 of Microverse curriculum 
-## BuyItApp (an ecommerce site for construction equipments sale)
 
+
+## Game-Ninja (an ecommerce site for construction equipments sale)
+Project 8 of 40 of Microverse curriculum 
 ![screenshot](./images/screenshot.jpg)
 
 </h1>This is an e-commerce website developed for a Game vendor for as  the capstone project for the microverse html/css track</h1>
